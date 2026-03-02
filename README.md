@@ -9,7 +9,7 @@ Created for better package managment in between both projects.
 Can be loaded standalone outside its original projects.
 
 > [!NOTE] 
-> If using side by side with either [fastapi-framework-mvc](https://pypi.org/project/fastapi-framework-mvc/) or [flask-framework-mvc](https://pypi.org/project/flask-framework-mvc/), it will load Environment from one ot this framework accordingly to the one you installed int your python env or python root libs.
+> If using side by side with either [fastapi-framework-mvc](https://pypi.org/project/fastapi-framework-mvc/) or [flask-framework-mvc](https://pypi.org/project/flask-framework-mvc/), it will load Environment from one of this framework accordingly to the one you installed int your python env or python root libs.
 
 ### Default database with builtin driver in sqlalchemy 
 
