@@ -69,7 +69,7 @@ DATABASES:
     password: "replace this with your database user's password"
     database: "replace this with your database name"
     address: "replace this with your hostname"
-    models: "bigquery (python module that require to be put under models.persistent module, non blocking if module doesn't exist)"
+    models: "bigquery (python module that require to be put under models.persistent module)"
     readonly: false
     engine:
       location: US
