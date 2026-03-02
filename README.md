@@ -2,9 +2,9 @@
 
 This python module handles any type of databases connection(s) using a yaml configuration file.
 
-It is a fork comming from [fastapi-framework-mvc](https://pypi.org/project/fastapi-framework-mvc/) and [flask-framework-mvc](https://pypi.org/project/flask-framework-mvc/).
+It is a fork coming from [fastapi-framework-mvc](https://pypi.org/project/fastapi-framework-mvc/) and [flask-framework-mvc](https://pypi.org/project/flask-framework-mvc/).
 
-Created for better package managment in between both projects.
+Created for better package management in between both projects.
 
 Can be loaded standalone outside its original projects.
 
