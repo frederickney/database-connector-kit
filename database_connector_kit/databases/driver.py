@@ -163,7 +163,7 @@ class Driver(object):
         # Setting up sqlalchemy database url connection
         database_uri = (
             f"{driver}://{f"{user}:{pwd}@" if user and pwd else ""}{host}{f":{port}" if port else ""}/{db}"
-            + f"{_url_param_separator}{cls._params(params, _params_separator)}" if params is not None else ""
+            + (f"{_url_param_separator}{cls._params(params, _params_separator)}" if params is not None else "")
         )
         # creates database connection
         cls.engine = create_engine(database_uri, echo=echo, **kwargs)
@@ -215,7 +215,7 @@ class Driver(object):
         # Setting up sqlalchemy database url connection
         database_uri = (
             f"{driver}://{f"{user}:{pwd}@" if user and pwd else ""}{host}{f":{port}" if port else ""}/{db}"
-            + f"{_url_param_separator}{cls._params(params, _params_separator)}" if params is not None else ""
+            + (f"{_url_param_separator}{cls._params(params, _params_separator)}" if params is not None else "")
         )
         # creates database connection
         cls.engines[name] = create_engine(database_uri, echo=echo, **kwargs)

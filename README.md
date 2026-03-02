@@ -23,7 +23,7 @@ DATABASES:
     password: "replace this with your database user's password"
     database: "replace this with your database name"
     address: "replace this with your hostname"
-    models: "mysql (python module that require to be put under Models.Persistent module)"
+    models: "mysql (python module that require to be put under models.persistent module, non blocking if module doesn't exist)"
     readonly: false
 ...
 ```
@@ -39,7 +39,7 @@ DATABASES:
     password: "replace this with your database user's password"
     database: "replace this with your database name"
     address: "replace this with your hostname"
-    models: "informix (python module that require to be put under Models.Persistent module)"
+    models: "informix (python module that require to be put under models.persistent module, non blocking if module doesn't exist)"
     params:
       SERVER: "replace with your server name"
       CLIENT_LOCALE: "replace with your client locale"
@@ -69,7 +69,7 @@ DATABASES:
     password: "replace this with your database user's password"
     database: "replace this with your database name"
     address: "replace this with your hostname"
-    models: "bigquery (python module that require to be put under models.persistent module)"
+    models: "bigquery (python module that require to be put under models.persistent module, non blocking if module doesn't exist)"
     readonly: false
     engine:
       location: US
