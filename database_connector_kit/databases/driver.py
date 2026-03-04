@@ -162,7 +162,7 @@ class Driver(object):
         _params_separator = '&' if kwargs is None else kwargs.pop('params_separator', '&')
         # Setting up sqlalchemy database url connection
         database_uri = (
-            f"{driver}://{f"{user}:{pwd}@" if user and pwd else ""}{host}{f":{port}" if port else ""}/{db}"
+            f"{driver}://{f'{user}:{pwd}@' if user and pwd else ''}{host}{f':{port}' if port else ''}/{db}"
             + (f"{_url_param_separator}{cls._params(params, _params_separator)}" if params is not None else "")
         )
         # creates database connection
@@ -214,7 +214,7 @@ class Driver(object):
         _params_separator = '&' if kwargs is None else kwargs.pop('params_separator', '&')
         # Setting up sqlalchemy database url connection
         database_uri = (
-            f"{driver}://{f"{user}:{pwd}@" if user and pwd else ""}{host}{f":{port}" if port else ""}/{db}"
+            f"{driver}://{f'{user}:{pwd}@' if user and pwd else ''}{host}{f':{port}' if port else ''}/{db}"
             + (f"{_url_param_separator}{cls._params(params, _params_separator)}" if params is not None else "")
         )
         # creates database connection
