@@ -45,12 +45,12 @@ except ImportError:
     pass
 try:
     #Load Environment from flask_framework_mvc < 1.3.0 if installed
-    from flask_framework_mvc.Config import Environment
+    from flask_framework.Config import Environment
 except ImportError:
     pass
 try:
     #Load Environment from flask_framework_mvc >= 1.3.0 if installed
-    from flask_framework_mvc.config import Environment
+    from flask_framework.config import Environment
 except ImportError:
     pass
 
